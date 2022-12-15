@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="kIzaS2.Calificacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CALCULO DE NOTAS" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
+            <Label Text="PARCIAL 1" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
+            <Entry x:Name="txtseguimiento1" Placeholder="Ingresa nota seguimiento 1" TextChanged="Txtseguimiento1_TextChanged" Keyboard="Numeric"/>
+            <Entry x:Name="txtexamen1" Placeholder="Ingresa nota examen 1" TextChanged="Txtexamen1_TextChanged" Keyboard="Numeric"/>
+            <Entry x:Name="txtparcial1" Placeholder="Nota Parcial 1" Keyboard="Numeric" IsEnabled="False"/>
+
+            <Label Text="PARCIAL 2" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
+            <Entry x:Name="txtseguimiento2" Placeholder="Ingresa nota seguimiento 2" TextChanged="Txtseguimiento2_TextChanged" Keyboard="Numeric"/>
+            <Entry x:Name="txtexamen2" Placeholder="Ingresa nota examen 2" TextChanged="Txtexamen2_TextChanged" Keyboard="Numeric"/>
+            <Entry x:Name="txtparcial2" Placeholder="Nota Parcial 2" Keyboard="Numeric" IsEnabled="False"/>
+
+            <Label Text="Nota Final" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
+            <Entry x:Name="txtnotafinal" Placeholder="Nota Final" Keyboard="Numeric" IsEnabled="False"/>
+
+            <Label x:Name="lblestado" Text="Estado" HorizontalTextAlignment="Start" FontSize="16" TextColor="Red"/>
+
+            <Button x:Name="btncalculo" Text="Verificar Nota" Clicked="Btncalculo_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
