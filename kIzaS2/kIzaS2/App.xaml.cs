@@ -10,7 +10,7 @@ namespace kIzaS2
         {
             InitializeComponent();
 
-            MainPage = new Calificacion();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

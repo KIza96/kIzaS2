@@ -12,9 +12,10 @@ namespace kIzaS2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Calificacion : ContentPage
     {
-        public Calificacion()
+        public Calificacion(string usuario)
         {
             InitializeComponent();
+            lblUsuario.Text = usuario;
         }
 
         private void Btncalculo_Clicked(object sender, EventArgs e)

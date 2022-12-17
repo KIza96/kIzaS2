@@ -7,6 +7,7 @@
              x:Class="kIzaS2.Calificacion">
     <ContentPage.Content>
         <StackLayout>
+            <Label x:Name="lblUsuario" Text="" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
             <Label Text="CALCULO DE NOTAS" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
             <Label Text="PARCIAL 1" HorizontalTextAlignment="Start" FontSize="16" TextColor="Blue"/>
             <Entry x:Name="txtseguimiento1" Placeholder="Ingresa nota seguimiento 1" TextChanged="Txtseguimiento1_TextChanged" Keyboard="Numeric"/>
